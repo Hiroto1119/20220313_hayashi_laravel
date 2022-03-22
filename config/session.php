@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;//追記
 
 return [
 
@@ -18,7 +19,8 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'file'),
+    // 'driver' => env('SESSION_DRIVER', 'file'),
+    'driver' => env('SESSION_DRIVER', 'database'),
 
     /*
     |--------------------------------------------------------------------------
